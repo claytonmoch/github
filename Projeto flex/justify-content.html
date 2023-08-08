@@ -1,0 +1,189 @@
+<!doctype html>
+	<html lang="pt-BR">
+	<head>
+	
+	<meta charset="utf-8">
+	<title>Fundamentos - justify content</title>
+	
+	<style>
+	.container{
+		display: flex;
+		border: 1px solid black;
+		max-width: 400px;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	
+	.item{
+		background-color: blueviolet;
+		margin: 5px;
+		color: white;
+		text-align: center;
+	}
+	
+			
+	.flex-start{
+		justify-content: flex-start;
+	}
+	
+	.flex-end{
+		justify-content: flex-end;
+	}
+	
+	.center{
+		justify-content: center;
+	}
+	
+	.space-between{
+		justify-content: space-between;
+	}
+	
+	.space-around{
+		justify-content: space-around;
+	}
+	
+	.column{
+		flex-direction: column;
+		min-height: 200px;
+	}
+	
+	.flex-end column{
+		justify-content: flex-end column;
+	}
+	
+	.center column{
+		justify-content: center column;
+	}
+	
+	.space-between column{
+		justify-content: space-between column;
+	}
+	
+	.space-around column{
+		justify-content: space-around column;
+	}
+	
+	.blue{
+		background-color: blue;
+	}
+	
+	.green{
+		background-color: green;
+	}
+	
+	.orange{
+		background-color: orange;
+	}
+	
+	.yellow{
+		background-color: yellow;
+	}
+	
+	</style>
+	
+	</head>
+	</body>
+				
+		<h1>row</h1>
+		<p>flex start</p>
+		
+		<div class="container flex-start">
+			<div class="item orange">1</div>
+			<div class="item green">2</div>
+			<div class="item blue">item 3</div>
+			<div class="item yellow">outro item 4</div>
+			<div class="item purple">5</div>
+		</div>
+		
+		<p>flex end</p>
+		
+		<div class="container flex-end">
+			<div class="item orange">1</div>
+			<div class="item green">2</div>
+			<div class="item blue">item 3</div>
+			<div class="item yellow">outro item 4</div>
+			<div class="item purple">5</div>
+		</div>
+		
+		<p>center</p>
+		
+		<div class="container center">
+			<div class="item orange">1</div>
+			<div class="item green">2</div>
+			<div class="item blue">item 3</div>
+			<div class="item yellow">outro item 4</div>
+			<div class="item purple">5</div>
+		</div>
+		
+		<p>space-between</p>
+		
+		<div class="container space-between">
+			<div class="item orange">1</div>
+			<div class="item green">2</div>
+			<div class="item blue">item 3</div>
+			<div class="item yellow">outro item 4</div>
+			<div class="item purple">5</div>
+		</div>
+		
+		<p>space-around</p>
+		
+		<div class="container space-around">
+			<div class="item orange">1</div>
+			<div class="item green">2</div>
+			<div class="item blue">item 3</div>
+			<div class="item yellow">outro item 4</div>
+			<div class="item purple">5</div>
+		</div>
+		
+		<h1>column</h1>
+		<p>flex start column</p>
+		
+		<div class="container flex-start column">
+			<div class="item orange">1</div>
+			<div class="item green">2</div>
+			<div class="item blue">item 3</div>
+			<div class="item yellow">outro item 4</div>
+			<div class="item purple">5</div>
+		</div>
+		
+		<p>flex end column</p>
+		
+		<div class="container flex-end column">
+			<div class="item orange">1</div>
+			<div class="item green">2</div>
+			<div class="item blue">item 3</div>
+			<div class="item yellow">outro item 4</div>
+			<div class="item purple">5</div>
+		</div>
+		
+		<p>center column</p>
+		
+		<div class="container center column">
+			<div class="item orange">1</div>
+			<div class="item green">2</div>
+			<div class="item blue">item 3</div>
+			<div class="item yellow">outro item 4</div>
+			<div class="item purple">5</div>
+		</div>
+		
+		<p>space-between column</p>
+		
+		<div class="container space-between column">
+			<div class="item orange">1</div>
+			<div class="item green">2</div>
+			<div class="item blue">item 3</div>
+			<div class="item yellow">outro item 4</div>
+			<div class="item purple">5</div>
+		</div>
+		
+		<p>space-around column</p>
+		
+		<div class="container space-around column">
+			<div class="item orange">1</div>
+			<div class="item green">2</div>
+			<div class="item blue">item 3</div>
+			<div class="item yellow">outro item 4</div>
+			<div class="item purple">5</div>
+		</div>
+	</html>
+	

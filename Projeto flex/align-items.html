@@ -1,0 +1,203 @@
+<!doctype html>
+	<html lang="pt-BR">
+	<head>
+	
+	<meta charset="utf-8">
+	<title>Fundamentos - align items</title>
+	
+	<style>
+	.container{
+		display: flex;
+		border: 1px solid black;
+		max-width: 350px;
+		
+	}
+	
+	.flex-container{
+		display: flex;
+		border: 1px solid black;
+		max-width: 350px;
+	
+	.item{
+		background-color: blueviolet;
+		margin: 5px;
+		font-size: 24px;
+		color: white;
+		text-align: center;
+		flex: 1;
+	}
+	
+	.s-l{
+		flex-shrink: 1;
+	}
+	
+	.fg-l{
+		flex-grow: 1;
+	}
+	
+	.center{
+		align-items: center;
+	}
+	
+	.stretch{
+		align-items: stretch;
+	}
+	
+	.flex-start{
+		align-items: flex-start;
+	}
+	
+	.flex-end{
+		align-items: flex-end;
+	}
+	
+	.baseline{
+		align-items: baseline;
+	}
+	
+	.column{
+		flex-direction: column;
+	}
+	
+	.central{
+		height: 300px;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.central .item{
+		flex: 0;
+		padding: 20px;
+	}
+		
+	.blue{
+		background-color: blue;
+	}
+	
+	.green{
+		background-color: green;
+	}
+	
+	.orange{
+		background-color: orange;
+	}
+	
+	.yellow{
+		background-color: yellow;
+	}
+	
+	</style>
+	
+	</head>
+	<body>
+		
+<h1>flex shrink</h1>
+		<p>center</p>
+		
+		<div class="flex-container"</div>
+			<div class="item s-l fg-l">1</div>
+			<div class="item s-l fg-l">2</div>
+			<div class="item s-l fg-l">item 3 e mais</div>
+			<div class="item s-l fg-l">outro item 4 que serve para testar o tamanho</div>
+			<div class="item s-l fg-l">5</div>
+		</div>
+		
+		
+		<h1>row</h1>
+		<p>center</p>
+		
+		<div class="container center"</div>
+			<div class="item orange">1</div>
+			<div class="item green">2</div>
+			<div class="item blue">item 3 e mais</div>
+			<div class="item yellow">outro item 4 que serve para testar o tamanho</div>
+			<div class="item purple">5</div>
+		</div>
+		
+		<p>stretch</p>
+		
+		<div class="container stretch"</div>
+			<div class="item orange">1</div>
+			<div class="item green">2</div>
+			<div class="item blue">item 3 e mais</div>
+			<div class="item yellow">outro item 4 que serve para testar o tamanho</div>
+			<div class="item purple">5</div>
+		</div>
+		
+		<p>flex-start</p>
+		
+		<div class="container flex-start"</div>
+			<div class="item orange">1</div>
+			<div class="item green">2</div>
+			<div class="item blue">item 3 e mais</div>
+			<div class="item yellow">outro item 4 que serve para testar o tamanho</div>
+			<div class="item purple">5</div>
+		</div>
+		
+		<p>flex-end</p>
+		
+		<div class="container flex-end"</div>
+			<div class="item orange">1</div>
+			<div class="item green">2</div>
+			<div class="item blue">item 3 e mais</div>
+			<div class="item yellow">outro item 4 que serve para testar o tamanho</div>
+			<div class="item purple">5</div>
+		</div>
+		
+		<p>baseline</p>
+		
+		<div class="container baseline"</div>
+			<div class="item orange"><br>1</div>
+			<div class="item green"><br>2</div>
+			<div class="item blue">item 3 e mais</div>
+			<div class="item yellow">outro item 4 que serve para testar o tamanho</div>
+			<div class="item purple">5</div>
+		</div>
+		
+		<p>flex-start column</p>
+		
+		<div class="container flex-start column"</div>
+			<div class="item orange">1</div>
+			<div class="item green">2</div>
+			<div class="item blue">item 3 e mais</div>
+			<div class="item yellow">outro item 4 que serve para testar o tamanho</div>
+			<div class="item purple">5</div>
+		</div>
+		
+		<p>flex-end column</p>
+		
+		<div class="container flex-end column"</div>
+			<div class="item orange">1</div>
+			<div class="item green">2</div>
+			<div class="item blue">item 3 e mais</div>
+			<div class="item yellow">outro item 4 que serve para testar o tamanho</div>
+			<div class="item purple">5</div>
+		</div>
+		
+		<p>center column</p>
+		
+		<div class="container center column"</div>
+			<div class="item orange">1</div>
+			<div class="item green">2</div>
+			<div class="item blue">item 3 e mais</div>
+			<div class="item yellow">outro item 4 que serve para testar o tamanho</div>
+			<div class="item purple">5</div>
+		</div>
+		
+		<p>baseline column</p>
+		
+		<div class="container baseline column"</div>
+			<div class="item orange"><br>1</div>
+			<div class="item green"><br>2</div>
+			<div class="item blue">item 3 e mais</div>
+			<div class="item yellow">outro item 4 que serve para testar o tamanho</div>
+			<div class="item purple">5</div>
+		</div>
+		
+		<p>align central</p>
+		<section class="container central center">
+			<div class="item">outro item 4 que serve para testar o tamanho</div>
+		
+	</body>	
+	</html>
+	
